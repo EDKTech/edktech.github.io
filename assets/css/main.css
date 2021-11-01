@@ -87,10 +87,18 @@ input, select, textarea {
 	margin: 25px;
 } 
 
-.requests a {
-
+.download-button {
+	float: right;
+	margin: 25px;
+	border-radius: 4px;
+	text-decoration: none;
 }
 
+.author {
+	font-style: italic;
+	float: left;
+	margin: 25px;
+}
 
 /* Basic */
 
