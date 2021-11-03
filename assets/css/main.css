@@ -83,6 +83,10 @@ input, select, textarea {
 	margin: 25px;
 }
 
+.requests a {
+	margin: 0px;
+}
+
 .requests button {
 	margin: 25px;
 } 
@@ -98,6 +102,52 @@ input, select, textarea {
 	font-style: italic;
 	float: left;
 	margin: 25px;
+}
+
+#news-headline {
+	border: 1px solid black;
+	border-radius: 4px;
+}
+
+#news-headline h2, h3.major-news, a {
+	margin: 15px;
+}
+
+#news-headline h3.major-news {
+	border-bottom: solid 1px #ffffff;
+	width: -moz-max-content;
+	width: -webkit-max-content;
+	width: -ms-max-content;
+	width: max-content;
+	padding-bottom: 0.5rem;
+	margin: 15px;
+}
+
+#news-headline a {
+    text-decoration: underline;
+}
+
+#news-headline a:hover {
+	text-decoration: none;
+	font-size: larger;
+}
+
+.news-archive a {
+    text-decoration: underline;
+}
+
+.news-archive a:hover {
+	text-decoration: none;
+	font-size: larger;
+}
+
+#archive {
+	border: 1px solid black;
+	border-radius: 4px;
+}
+
+#archive h3, h3.major-news, a {
+	margin: 15px;
 }
 
 /* Basic */
@@ -325,6 +375,14 @@ input, select, textarea {
 
 	.align-right {
 		text-align: right;
+	}
+
+	.margin-error p, a{
+		margin: 0px;
+	}
+
+	nav a {
+		margin: 15px;
 	}
 
 /* Form */
