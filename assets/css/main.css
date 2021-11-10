@@ -108,7 +108,7 @@ input, select, textarea {
 	border-radius: 4px;
 }
 
-#news-headline h2, h3.major-news, a {
+#news-headline h2, h3.headline_h3, h3.major-news, a {
 	margin: 15px;
 }
 
@@ -147,6 +147,22 @@ input, select, textarea {
 
 #archive h3, h3.major-news, a {
 	margin: 15px;
+}
+
+.guides-ol {
+	font-weight: bold;
+}
+
+.guides-ol p {
+	font-weight: normal;
+}
+
+.guides-ol p a {
+	text-decoration: underline;
+}
+
+.guides-ol p a:hover {
+	text-decoration: none;
 }
 
 /* Basic */
