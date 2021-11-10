@@ -170,13 +170,23 @@
 
                              <li>
                              	<p><strong>Signing the app</strong><br>
-                                 Now, iOS App Signer is required to sign this app. Special thanks to <a href="https://linustechtips.com/profile/763720-fakekgb/">FakeKGB</a> over on LTT for recommending Sideloadly to me, but sadly I signing setting built into iOS App Signer is mandatory, I used Sideloadly and the process failed with error "UICache failed". This setting was added by tihmstar (the main creator of the jailbreak) and is called "no-get-task allow". Now sadly, this version was never compiled into a .app file to run, you'd have to manually build the app yourself. To help ease the burden, I compiled the latest version of iOS App Signer so you don't have to. Download that from the downloads page here on <a href="https://edktech.github.io/#downloads">edktech.github.io</a> or <a href="https://github.com/EDKTech/ios-app-signer/releases">Github</a> (Version 1.14). 
+                                 Now, iOS App Signer is required to sign this app. Special thanks to <a href="https://linustechtips.com/profile/763720-fakekgb/">FakeKGB</a> over on LTT for recommending Sideloadly to me, but sadly I signing setting built into iOS App Signer is mandatory, I used Sideloadly and the process failed with error "UICache failed". This setting was added by tihmstar (the main creator of the jailbreak) and is called "no-get-task allow". Now sadly, this version was never compiled into a .app file to run, you'd have to manually build the app yourself. To help ease the burden, I compiled the latest version of iOS App Signer so you don't have to. Download that from the downloads page here on <a href="https://edktech.github.io/#downloads">edktech.github.io</a> or <a href="https://github.com/EDKTech/ios-app-signer/releases">Github</a> (Version 1.14). Run the app and drag the h3lix-rc6.ipa file into the iOS App Signer window. Select your provisioning profile and select no-get-task allow. Click Start, choose your directory, and enter your password (be sure when you enter the password to select "Do this for all current items").
+                             	</p>
+                             </li>
 
-                                 <br><br><strong>I'm still working on this.</strong>
-                             		
+                             <li>
+                             	<p>
+                             		<strong>Installing the app</strong><br>
+                             		Open Xcode, and in the menu bar select <strong>Window > Devices and Simulators</strong>. Make sure you have your device plugged into your computer. Select your device and when Xcode finishes setting your device up, select the <strong>+</strong> button under "Installed apps". Choose the newly signed .ipa file. When it finishes installing, on your iPad or iPhone, open <strong>Settings > General > Device Management > [Your Apple ID]</strong> and select trust (if it fails, make sure your device is connected to the internet). Open the App and push the button "Jailbreak". There!</strong> 
                              	</p>
                              </li>
                             </ol>
+
+                            <p>Whew! All done! When the exploit finishes, you'll have the Cydia Store to do all kinds of 
+                               stuff! Note that everytime you restart your device, since this is a tethered jailbreak, you'll have to open the H3lix app and push the button "Kickstart". Also, if you're on a free Apple Developer Account, every 7 days the H3lix app will expire and you'll have to resign and reinstall the app from Xcode and iOS App signer (Steps 2 & 3). </p><br>
+
+                            <p>Thanks for reading to the end! If you have any issues or questions, PM me on the <br><a href="https://linustechtips.com/profile/858643-edk-tech/">LTT forum</a>. And, keep an eye out, I'll definitely post another guide about some 
+                               cool stuff you can do with your jailbroken! device!</p>   
 							  </article>
 
 
