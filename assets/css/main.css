@@ -165,6 +165,10 @@ input, select, textarea {
 	text-decoration: none;
 }
 
+#guides {
+	float: left;
+}
+
 /* Basic */
 
 	@-ms-viewport {
