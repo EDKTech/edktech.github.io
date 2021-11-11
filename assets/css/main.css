@@ -145,7 +145,7 @@ input, select, textarea {
 	border-radius: 4px;
 }
 
-#archive h3, h3.major-news, a {
+#archive h3, h2.major-news, a {
 	margin: 15px;
 }
 
@@ -167,6 +167,11 @@ input, select, textarea {
 
 #guides {
 	float: left;
+}
+
+.red-text {
+	color: red;
+	font-weight: bold;
 }
 
 /* Basic */
