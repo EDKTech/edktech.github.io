@@ -67,6 +67,10 @@ input, select, textarea {
 	appearance: none;
 }
 
+article p a {
+	font-weight: bold;
+}
+
 .requests {
 	margin-bottom: 15px;
 	float: left;
@@ -180,6 +184,11 @@ iframe {
 	text-align: left;
 	margin-left: 0px;
 	margin-bottom: 25px;
+}
+
+.imgForArticles img {
+	border: 1px solid white;
+	border-radius: 15px;
 }
 
 /* Basic */
