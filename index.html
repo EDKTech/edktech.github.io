@@ -98,17 +98,40 @@
 						
 						<!-- Downloads -->
 							<article id="downloads">
-								<h2 class="major">Downloads</h2>
-								<div class="requests">
+							 <h2 class="major">Downloads</h2>
+
+						     <div class="requests">
         	                  <h3>iOS App Signer</h3>
-									  <div class="author"><p>Created by <a href="https://github.com/DanTheMan827">DanTheMan827</a> and 
-									                         Compiled by <a href="https://github.com/EDKTech">EDK Tech</a></p></div>
-								       <br><br>
-        	                      <p>This is the latest version of iOS App Signer. This version is mandatory for jailbreaking the 
-        	                      	 iPad 4th Generation, iPhone 5, iPhone 5c and other 32bit devices. <br>(more info <a href="https://h3lix.tihmstar.net">here</a>)</p>
-                               <a href="downloads/ios-app-signer/iosappsigner.app.zip">
+							    <div class="author">
+							    	<p>Created by <a href="https://github.com/DanTheMan827">DanTheMan827</a> 
+							    		and Compiled by <a href="https://github.com/EDKTech">EDK Tech</a></p>
+							    </div>
+								  <br><br>
+        	                      <p>
+        	                      	This is the latest version of iOS App Signer. This version is mandatory for the jailbreaking of the iPad 4th Generation, iPhone 5, iPhone 5c and other 32bit devices. <br>(more info <a href="https://h3lix.tihmstar.net">here</a>)
+        	                      </p>
+
+                                 <a href="downloads/ios-app-signer/iosappsigner.app.zip">
+                               	<button><i class="fas fa-download"></i>  Download</button></a> 
+                             </div><br><br>
+
+                             <div class="requests">
+        	                  <h3>LTT Sidebar Customizer</h3>
+							    <div class="author">
+							    	<p>Created by <a href="https://github.com/DanTheMan827">DanTheMan827</a> 
+							    		and Compiled by <a href="https://github.com/EDKTech">EDK Tech</a></p>
+							    </div>
+								  <br><br>
+        	                      <p>
+        	                      	This is the latest version of iOS App Signer. This version is mandatory for the jailbreaking of the iPad 4th Generation, iPhone 5, iPhone 5c and other 32bit devices. <br>(more info <a href="https://h3lix.tihmstar.net">here</a>)
+        	                      </p>
+
+                                 <a href="downloads/ios-app-signer/iosappsigner.app.zip">
                                	<button><i class="fas fa-download"></i>  Download</button></a> 
                              </div>
+
+                             <br><br>
+
 							</article>
 
 
@@ -259,8 +282,11 @@
                             	<p><a href="#guides">back</a></p>
 
                             	<p class="author">by EDK</p>
+                            	<br>
 
                             	<br><br><br>
+
+                            	<p>Note: If images appear blurry, please click on them to view them full-size.</p>
 
                             	<p>So, if you're a part of the jailbreaking world, you might have heard something about Apple 
                             	   not signing versions of iOS after they are about 2 weeks old. You also may have heard about some things called "<strong>SHSH blobs</strong>" that can somehow help with this.
@@ -269,7 +295,7 @@
                                    To keep jaibreakers on their toes, after Apple releases a software update, they stop signing older versions of iOS with their authenticity certificate. For example, in the image below you see the sofware list of signed and unsigned iPSWs (Apple software update files) for the iPhone SE (2020). 
                                    <br><br>
 
-                                   <div class="imgForArticles"><img src="images/ipswiphonese2020.png" width="90%" height="427px"></div>
+                                   <div class="imgForArticles"><a href="images/ipswiphonese2020.png" target="_blank"><img src="images/ipswiphonese2020.png" width="90%" height="427px"></a></div>
 
                                    <br><br>
                                    The signed versions can be restored with iTunes, and the unsigned versions cannot. In fact, you can't restore them at all without these little files with Apple's signature on them called "<strong>SHSH blobs</strong>". These files are contained in every signed and unsigned version of iOS. The ones in the signed versions of iOS have not expired and are constantly updated (up to two weeks after a new release has been created). Unsigned versions of iOS have expired blobs that are unusable. 
@@ -281,14 +307,22 @@
                             	<p>The most popular method of saving blobs is the online TSS Saver located at 
                             	   <a href="https://tsssaver.1conan.com/v2/">tsssaver.1conan.com/v2/</a>. This website will have you put in your ECID and device model, and if your saving a newer device's blobs, a thing called "<strong>APNonce</strong>". 
                                    <br><br>
-                            	   To begin, open iTunes on Windows or macOS 10.14 and earlier, and Finder on macOS 10.15 and earler. Connect your device to the port and open it:
+                            	   To begin, open iTunes on Windows or macOS 10.14 and earlier, and Finder on macOS 10.15 and earler. Connect your device to the port open the menu in iTunes or Finder:
                             	   <br><br>
 
-                                   <div class="imgForArticles"><img src="images/iTunes.png"></div>
+                                   <div class="imgForArticles"><a href="images/itunesecid.png" target="_blank"><img src="images/itunesecid.png" width="99%" height="251"></a></div>
 
                             	   <br><br>
-                            	   <strong><a href="https://tsssaver.1conan.com/v2/">TSS Saver</a></strong> 
-                            	   website. With the previous version of TSS Saver, 
+                            	   On the "<strong>Summary</strong>" tab there is a little string of text labeled "<strong>Serial Number</strong>". Click on that line of text until it says "ECID". Copy that text and go to the <strong><a href="https://tsssaver.1conan.com/v2/">TSS Saver</a></strong> 
+                            	   website. With the previous version of TSS Saver, you had to use a seperate website to convert your ECID to HEX Decimal, but now that is built into TSS Saver. So go to the website (linked above), and click on "<strong>save</strong>". Paste your ECID into the field and select your device's model. 
+                            	   <br><br>
+
+                            	   <div class="imgForArticles"><a href="images/tsssaver.png" target="_blank"><img src="images/tsssaver.png" width="95%" height="256"></a></div>
+
+                            	   <br><br>
+                            	   If you have a newer device, you are required to <strong>specify an APNonce</strong>.
+                            	   Sadly you can't specify an APNonce with iTunes, so that's why I use something called "<strong>blobsaver</strong>".
+
 
 
                             	   <h1 class="major" style="color: red;">UNDER CONTRUCTION</h1>
