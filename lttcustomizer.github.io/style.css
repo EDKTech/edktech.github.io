@@ -63,7 +63,7 @@ nav {
   border: 1px solid orangered;
 }
 
-.p {
+p {
   color: white;
   font-family: helvetica;
   text-align: center;
@@ -71,8 +71,21 @@ nav {
   margin-right: 30%;
 }
 
+.list {;
+  font-family: helvetica;
+  font-variant: small-caps;
+  color: white;
+  text-align: center;
+}
+
 img {
   text-align: center;
+}
+
+code {
+  background-color: black;
+  padding: 4px;
+  border-radius: 5px;
 }
 
 /* Hyperlink rules */
