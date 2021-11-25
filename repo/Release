@@ -1,0 +1,8 @@
+Origin: EDK Tech
+Label: EDK Tech's Repo
+Suite: alpha
+Version: 1.0
+Codename: vivaldi
+Architectures: ipados-arm
+Components: main
+Description: EDK Tech's Cydia repo
