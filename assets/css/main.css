@@ -738,6 +738,7 @@ iframe {
 		ul.icons li {
 			display: inline-block;
 			padding: 0px;
+			margin: 2px;
 		}
 
 			ul.icons li:last-child {
