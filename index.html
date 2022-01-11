@@ -86,10 +86,11 @@
 								<h2 class="major">Guides</h2>
 								<span class="image main"><img src="images/guides.jpg" alt="news" width="75%" height="250px" /></span>
 								<div id="news-headline"><h2 class="major">Latest Article:</h2> 
-									<h3 class="headline_h3"><a href="#shshblobsaverguide">How to save SHSH blobs!</a></h3>
+									<h3 class="headline_h3"><a href="#firefoxdevinstall">Installing Firefox Dev Edition on Ubuntu</a></h3>
 								</div>
 								<br><br>
 							<div id="archive"><h3 class="major">Old</h3>
+							   <a href="#shshblobsaverguide"><h3 class="headline_h3">How to save SHSH blobs!</h3>
 							   <a href="#coolbooter"><h3 class="headline_h3">CoolBooter: Dual-boot your 32bit iDevice!</h3></a>	
 							   <a href="#jailbreakingipad4thgen"><h3 class="headline_h3">Jailbreak iPad 4th Generation</h3></a>
 							</div>  
@@ -161,8 +162,8 @@
 					</article>
 
 
-							<!-- Guide Articles -->
-							 <!-- Jailbreaking iPad 4th Generation -->
+				<!-- Guide Articles -->
+					<!-- Jailbreaking iPad 4th Generation -->
                     <article id="jailbreakingipad4thgen">
 								<h2 class="major">Jailbreaking iPad 4</h2>
 
@@ -183,7 +184,7 @@
                              	   	A mandatory component in all of this  
                              	   	is the <a href="https://apps.apple.com/us/app/xcode/
                              	      id497799835?mt=12">Xcode software</a>. This is used to create a developer 
-                                    certificate to use on the .ipa file, install the .ipa file on our device, to be used to jailbreak. So, to start, you'll need a free Apple Developer Account. Sign up with your Apple ID <a href="https://developer.apple.com">here</a>. Now, let's head on over to the <a href="https://h3lix.tihmstar.net">h3lix</a> website. This is where you'll download the .ipa file. After the file is downloaded, open Xcode and click "Create a new project". Choose "App", and at the last screen, type "h3lix" into the app name field and click "Create". 
+                                    certificate to use on the .ipa file, install the .ipa file on our device, to be used to jailbreak. So, to start, you'll need a free Apple Developer Account. Sign up with your Apple ID <a href="https://developer.apple.com">here</a>. Now, let's head on over to the <a href="https://h3lix.tihmstar.net">h3lix</a> website. This is where you'll download the .ipa file. After the file is downloaded, open Xcode and click "Create a new project". Choose "https://www.vmware.com/products/workstation-player/workstation-player-evaluation.htmlApp", and at the last screen, type "h3lix" into the app name field and click "Create". 
                                  </p>
                              </li>
 
@@ -342,6 +343,79 @@
 
                             </article> 
 
+                     <!-- Firefox dev -->    
+                      <article id="firefoxdevinstall">
+                            	<h2 class="major">Installing <br>Firefox Dev Edition <br>on Ubuntu</h2>
+
+                            	<p><a href="#guides">back</a></p>
+
+                            	<p class="author">by EDK</p>
+                            	<br>
+
+                            	<br><br><br>
+
+
+                            	<p>
+                            	   Firefox Developer Edition is a version of Firefox specifically made for Web Designers, with extra features and tools to make testing easier. <br><br>
+                            	   I tried to install it on Ubuntu Linux, but I couldn't find a single guide on the internet telling me how. All Mozilla gives you is a <strong>.tar.bz2</strong> archive.<br>
+                            	   Well, I eventually figured it out. Today I want to show you how to install it on Ubuntu-based Linux distros.
+                            	</p><br><br>
+
+
+                         <ul class="guides-ul">
+                                <li>
+                                <p>
+                                  <strong>What you need</strong><br>
+                            	  First, you need the archive from <a href="https://www.mozilla.org/en-US/firefox/developer/">Mozilla's Website</a>
+                            	  <br>
+                            	  You also need an up-to-date Linux kernel to run the software. Ubuntu-based distros only.
+                            	</p>
+                                </li>
+
+                            	<li>
+                            	<p>
+                            		<strong>Extracting and copying</strong>
+                            	    <br>
+                            	
+                            		When the archive is downloaded, make sure it is saved in your Downloads directory. "<strong>cd</strong>" into your Downloads folder with this command:<br><br><code>cd ~/Downloads</code><br><br>Extract the file with <code>tar -xvf **.tar.bz2</code> (replace <strong>**</strong> with the archive's filename)<br><br>
+                            		Before continuing, reset the terminal so you are no longer in the Downloads folder.<br><br>
+                            		Now using "<strong>sudo</strong>" for root privileges, move the folder to the "<strong>opt</strong>" folder. <br><code>sudo mv /home/username/Downloads/firefox /opt</code> (Replace "username" with your computer's username)
+                            	</p></li>
+                            	
+                                <li>
+                            	<p>
+                            		<strong>Binary and icon</strong><br>
+
+                            		We need to create a shortcut in our Applications menu to access the program with the "<strong>touch</strong>" command:<br><div class="long-code">sudo touch /usr/share/applications/firefox-developer.desktop</div><br>
+                            		Great! With the file created navigate with your file browser to<br><strong>usr/share/applications/firefox-developer.desktop</strong><br>Open it in a text editor such as 
+                            		<a href="https://www.nano-editor.org/">Nano</a> or 
+                            		<a href="https://sublimetext.com">Sublime Text</a>, because the built in text editor does not allow you to edit Read-only files. <br><br>
+                            		Copy the following into the text editor:<br><br>
+                            		<div class="long-code">
+                            			[Desktop Entry]<br><br>
+                            			Name=Firefox Developer<br><br>
+                            			GenericName=Firefox Developer Edition<br><br>
+                            			Exec=/usr/local/bin/firefox<br><br>
+                            			Terminal=false<br><br>
+                            			Icon=/opt/firefox/browser/chrome/icons/default/default48.png<br><br>
+                            			Type=Application<br><br>
+                            			Categories=Application;Network;X-Developer;<br><br>
+                            			Comment=Firefox Developer Edition Web Browser
+                            		</div><br>
+                            		All of that, in that layout is required. Save the file and enter your password when prompted.<br><br>Open Terminal again and run this command to update the permissions of the file:<br><br>
+                            		<div class="long-code">sudo chmod +x /usr/share/applications/firefox-developer.desktop</div><br><br>Now you can access the Firefox Developer Edition Browser from your Applications menu!
+                                    </p>
+                                </li>
+                         </ul>      
+                            	
+
+                            	
+                            	<p>
+                               	Thanks for reading to the end! If you have any issues or questions, PM me on the <br><a href="https://linustechtips.com/profile/858643-edk-tech/">LTT forum</a>. 
+                               </p>
+
+
+                            </article> 
 
 
                     <!-- Hackintosh folders -->
