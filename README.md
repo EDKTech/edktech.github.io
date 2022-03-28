@@ -12,4 +12,4 @@
 2. I, EDK, am currently the only contributer to both this website, the EFI folders, and other things you may find here. If you would like to contribute, please tell me so in a discussion under www.github.com/EDKTech/custom-efi-folders.
 3. The games embedded in this website are hosted courtesy of www.htmlgames.com. Downloading these games for yourself is ILLEGAL. Note on mobile devices: The games do not load centered on most mobile phones, however, they do on tablets. Tapping on the game will work, transferring you to full-screen. To return to the website from the full-screen game, press back in your browser.
 4. This website is based on a heavily modified version of the "Dimension" template from www.html5up.net.
-
+5. The YouTube Downloader is under the Creative Commons BY-SA 2.0 License. Please give attribution when using it.
