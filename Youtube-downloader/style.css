@@ -31,3 +31,9 @@
     background: red;
     color:white;
 }
+
+p {
+    color: orange;
+    font-weight: bold;
+    font-size: larger;
+}    
